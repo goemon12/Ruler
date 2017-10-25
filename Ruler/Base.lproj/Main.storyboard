@@ -1,24 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OfD-RQ-Lky">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Courier.ttc">
+            <string>Courier</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--MainVC-->
+        <scene sceneID="YBd-7e-RvM">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="OfD-RQ-Lky" customClass="MainVC" customModule="Ruler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uZl-cW-uWX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017 Goemon Software" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZ4-j5-qrf">
+                                <rect key="frame" x="0.0" y="538" width="320" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="s4Y-J3-2R7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <navigationBar alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAr-10-EX6">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="kGe-0j-fjb"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="定規(Ruler)V1.4" id="63J-tl-Gbj">
+                                        <barButtonItem key="rightBarButtonItem" title="設定" id="xH2-UM-hzK">
+                                            <connections>
+                                                <segue destination="jcZ-z8-1R8" kind="presentation" modalTransitionStyle="flipHorizontal" id="elp-De-2gf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Huf-pI-cwG">
+                                <rect key="frame" x="0.0" y="438" width="320" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iTA-1d-yCG">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="8bq-6O-Jgs"/>
+                                            <constraint firstAttribute="width" constant="80" id="beb-gx-eWS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDj-tY-Vf6">
+                                        <rect key="frame" x="115" y="20" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Nth-yX-m0g"/>
+                                    <constraint firstItem="iTA-1d-yCG" firstAttribute="top" secondItem="Huf-pI-cwG" secondAttribute="top" id="ejr-fS-faU"/>
+                                    <constraint firstItem="iTA-1d-yCG" firstAttribute="leading" secondItem="Huf-pI-cwG" secondAttribute="leading" id="zYO-XS-74h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bAr-10-EX6" firstAttribute="trailing" secondItem="qgt-Za-dvc" secondAttribute="trailing" id="7bV-lj-jOv"/>
+                            <constraint firstItem="Huf-pI-cwG" firstAttribute="leading" secondItem="qgt-Za-dvc" secondAttribute="leading" id="KHo-Vv-aa2"/>
+                            <constraint firstItem="CZ4-j5-qrf" firstAttribute="trailing" secondItem="qgt-Za-dvc" secondAttribute="trailing" id="WHj-5M-Fpl"/>
+                            <constraint firstItem="CZ4-j5-qrf" firstAttribute="bottom" secondItem="qgt-Za-dvc" secondAttribute="bottom" id="X6l-lo-xgc"/>
+                            <constraint firstItem="bAr-10-EX6" firstAttribute="top" secondItem="qgt-Za-dvc" secondAttribute="top" id="bKT-cD-vOS"/>
+                            <constraint firstItem="qgt-Za-dvc" firstAttribute="trailing" secondItem="Huf-pI-cwG" secondAttribute="trailing" id="fGH-mL-geD"/>
+                            <constraint firstItem="qgt-Za-dvc" firstAttribute="bottom" secondItem="Huf-pI-cwG" secondAttribute="bottom" constant="50" id="fgG-nm-57j"/>
+                            <constraint firstItem="bAr-10-EX6" firstAttribute="leading" secondItem="qgt-Za-dvc" secondAttribute="leading" id="hux-8T-Uc1"/>
+                            <constraint firstItem="CZ4-j5-qrf" firstAttribute="leading" secondItem="qgt-Za-dvc" secondAttribute="leading" id="wPe-2i-2rH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qgt-Za-dvc"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j1P-sT-ZIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-405" y="60"/>
+        </scene>
+        <!--SettingVC-->
+        <scene sceneID="QU8-0k-cc1">
+            <objects>
+                <viewController id="jcZ-z8-1R8" customClass="SettingVC" customModule="Ruler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SCk-Cs-ZWf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3c-Rr-nj3">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WyF-a0-oYk"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="設定" id="Qgh-6a-hpK">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="umw-aB-zFQ">
+                                            <connections>
+                                                <segue destination="Fkk-0S-fpd" kind="unwind" unwindAction="BackMainWithSegue:" id="r8g-Tj-xe8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L3c-Rr-nj3" firstAttribute="top" secondItem="Vg6-9h-68W" secondAttribute="top" id="0ai-cl-7dD"/>
+                            <constraint firstItem="L3c-Rr-nj3" firstAttribute="trailing" secondItem="Vg6-9h-68W" secondAttribute="trailing" id="ezh-Ya-GDu"/>
+                            <constraint firstItem="L3c-Rr-nj3" firstAttribute="leading" secondItem="Vg6-9h-68W" secondAttribute="leading" id="icB-fi-cDL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vg6-9h-68W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fhx-WO-daO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Fkk-0S-fpd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="56"/>
         </scene>
     </scenes>
 </document>
