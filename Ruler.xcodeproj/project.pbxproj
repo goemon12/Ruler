@@ -24,6 +24,7 @@
 		0D94582E1FA0AFA600ABA21B /* NendAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9458191FA0ADA400ABA21B /* NendAd.framework */; };
 		0D9458301FA0DC7A00ABA21B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94582F1FA0DC7A00ABA21B /* MainVC.swift */; };
 		0D9458321FA0DCC800ABA21B /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9458311FA0DCC800ABA21B /* SettingVC.swift */; };
+		0DF4FA971FA37648005F9478 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FA961FA37648005F9478 /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		0D94582C1FA0AEAE00ABA21B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		0D94582F1FA0DC7A00ABA21B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		0D9458311FA0DCC800ABA21B /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		0DF4FA961FA37648005F9478 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				0D9458031FA0AC6D00ABA21B /* AppDelegate.swift */,
 				0D94582F1FA0DC7A00ABA21B /* MainVC.swift */,
+				0DF4FA961FA37648005F9478 /* DrawView.swift */,
 				0D9458311FA0DCC800ABA21B /* SettingVC.swift */,
 				0D9458071FA0AC6D00ABA21B /* Main.storyboard */,
 				0D94580A1FA0AC6D00ABA21B /* Assets.xcassets */,
@@ -211,6 +214,7 @@
 			files = (
 				0D9458041FA0AC6D00ABA21B /* AppDelegate.swift in Sources */,
 				0D9458321FA0DCC800ABA21B /* SettingVC.swift in Sources */,
+				0DF4FA971FA37648005F9478 /* DrawView.swift in Sources */,
 				0D9458301FA0DC7A00ABA21B /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.goemon.Ruler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,7 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.goemon.Ruler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
