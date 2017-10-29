@@ -62,7 +62,7 @@ class MainVC: UIViewController, NADNativeDelegate {
         })
         ad.activateAdView(self.nadView, withPrLabel: self.nadPrLbl)
         
-        self.layoutNadView.constant = 30
+        self.layoutNadView.constant = 50
         self.view.setNeedsLayout()
         
         UIView.animate(withDuration: 1.0, animations: {

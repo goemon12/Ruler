@@ -19,7 +19,8 @@ class SettingVC: UIViewController {
     var color2: Int = 1 //文字(mm)
     var color3: Int = 1 //背景(inch)
     var color4: Int = 0 //文字(inch)
-
+    var nadFlag: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

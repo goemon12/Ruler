@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<canvas id="CVS" width="1024" height="1024"></canvas><br>
+	<img id="IMG"><br>
+	<input type="button" value="保存" onclick="save()">
+	<script>
+		var canvas = document.getElementById("CVS");
+		var context = canvas.getContext("2d");
+
+		var w = 1024;
+		var h = 1024;
+
+		context.fillStyle = "darkBlue";
+		context.fillRect(0, 0, w, h);
+
+		var x1 = w / 4;
+		var l1 = w / 4 * 3;
+		context.fillStyle = "lightGray";
+		context.fillRect(x1, 0, l1, h);
+
+
+		var l2 = l1 / 2;
+		var l3 = l2 / 2;
+		context.fillStyle = "black";
+		context.font = "200px 'Courier'";
+
+		for (i = 0; i <  3; i++) {
+			context.fillRect(x1, i * 400 - 100 - 5, l2, 10);
+			context.fillText("" + i, x1 + l2 + 150, i * 400 + 60 - 100);
+		}
+
+		for (i = 0; i < 30; i++) {
+			context.fillRect(x1, i *  40 - 100 - 5, l3, 10);
+		}
+
+		function save() {
+			var img = document.getElementById("IMG");
+			var src = document.getElementById("CVS").toDataURL();
+			img.src = src;
+		}
+	</script>
+</body>
+</html>
