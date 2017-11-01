@@ -25,7 +25,7 @@ class MainVC: UIViewController, NADNativeDelegate {
         super.viewDidLoad()
         
         //広告を引っ込めておく
-        self.layoutNadView.constant = -100
+        self.layoutNadView.constant = -200
         self.view.setNeedsLayout()
         self.view.layoutIfNeeded()
 
@@ -72,7 +72,7 @@ class MainVC: UIViewController, NADNativeDelegate {
     }
     
     func nativeFail() {
-        self.layoutNadView.constant = -100
+        self.layoutNadView.constant = -200
         self.view.setNeedsLayout()
         
         UIView.animate(withDuration: 1.0, animations: {
