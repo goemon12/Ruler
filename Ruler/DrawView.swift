@@ -45,20 +45,20 @@ class DrawView: UIView {
             color4 = UserDefaults().integer(forKey: "color4")
         }
         
-        print("size = \(UIScreen.main.nativeBounds.height)")
-        
         switch UIScreen.main.nativeBounds.height {
-        case 1136.0:
+        case 1136.0://シミュレータ4.0、Apple HP仕様
             sc_s = 4.0
-        case 1334.0:
+        case 1334.0://シミュレータ4.7、Apple HP仕様
             sc_s = 4.7
-        case 1920.0:
+        case 1920.0://実機5.5、Apple HP仕様
             sc_s = 5.5
-        case 2436.0:
+        case 2208.0://シミュレータ5.5
+            sc_s = 5.5
+        case 2436.0://シミュレータ5.8、Apple HP仕様
             sc_s = 5.8
-        case 1792.0:
+        case 1792.0://シミュレータ6.1、Apple HP仕様
             sc_s = 6.1
-        case 2688.0:
+        case 2688.0://シミュレータ6.5、Apple HP仕様
             sc_s = 6.5
         default:
             sc_s = 3.5
