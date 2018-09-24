@@ -45,6 +45,8 @@ class DrawView: UIView {
             color4 = UserDefaults().integer(forKey: "color4")
         }
         
+        print("size = \(UIScreen.main.nativeBounds.height)")
+        
         switch UIScreen.main.nativeBounds.height {
         case 1136.0:
             sc_s = 4.0
@@ -54,6 +56,10 @@ class DrawView: UIView {
             sc_s = 5.5
         case 2436.0:
             sc_s = 5.8
+        case 1792.0:
+            sc_s = 6.1
+        case 2688.0:
+            sc_s = 6.5
         default:
             sc_s = 3.5
         }
